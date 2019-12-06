@@ -1,0 +1,17 @@
+{
+  "name": "portfolio2",
+  "version": "0.0.2",
+  "description": "Julian Johannesen is a full stack web developer living in the Boston area. ",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "portfolio",
+    "resume",
+    "cv",
+    "personal-site"
+  ],
+  "author": "Julian Johannesen",
+  "license": "ISC"
+}
