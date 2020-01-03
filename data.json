@@ -1,7 +1,7 @@
 {
     "projects": [
         {
-            "id": "coc111",
+            "id": "coc",
             "project_name": "Creepin' on Colleagues",
             "description": "A dashboard that allows Treehouse students to view metrics about each others' progress through the the Treehouse curriculum.",
             "technologies": ["Node", "Express"],
@@ -10,13 +10,13 @@
             "image_urls": ["static/images/creepin550x550.PNG", "/static/images/creepin1200x550.PNG"]
         },
         {
-            "id": "blah2",
-            "project_name": "blah2",
-            "description": "blah",
-            "technologies": ["blah", "blah"],
-            "live_link": "blah",
-            "github_link": "blah",
-            "image_urls": ["static/images/550x550.png", "static/images/550x550.png"]
+            "id": "rrfm",
+            "project_name": "Rachael for Malden",
+            "description": "The campaign website of Rachael Running, candidate for school committee.",
+            "technologies": ["Gatsby", "React", "GraphQL"],
+            "live_link": "https://www.rachaelformalden.com/",
+            "github_link": "https://github.com/julianjohannesen/rachael_running",
+            "image_urls": ["static/images/rachaelrunnning550x550.png", "static/images/rachaelrunning1200x550.png"]
         },
         {
             "id": "blah3",

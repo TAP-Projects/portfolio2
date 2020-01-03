@@ -40,9 +40,10 @@ app.get("/about", function(req, res) {
 });
 
 // Render project pages
-// app.get("/:id", function(req, res) {
-// 	res.render("project", {project});
-// });
+app.get("/:id", function(req, res) {
+  const project = data.projects.filter(proj => req.params.id === proj.id)[0];
+	res.render("project", {project});
+});
 
 /*
 ERROR HANDLING
