@@ -63,7 +63,7 @@ app.use(function(err, req, res, next) {
 
 	// Set the response status to err status or 500
 	res.status(err.status || 500);
-	// render the error page
+	// Render the error page
 	res.render("error");
 });
 
