@@ -1,23 +1,69 @@
-const express = require('express');
-const data = require('./data.json');
-// Used when setting express.static()
-const path = require('path');
+const path = require("path"); // for __dirname
+const express = require("express");
+const logger = require("morgan");
+const favicon = require("serve-favicon");
+const bodyParser = require("body-parser");
+const createError = require("http-errors");
+const data = require("./data.json");
+
+// Instantiate the app instance
+const app = express();
 
 // Set view engine
-app.set('view engine', 'pug')
-// Use express.static to set the root folder and any options
-app.use(express.static('public'))
+app.set("view engine", "pug");
+// Set view directory
+app.set("views", path.join(__dirname, "views"));
+
+// Log requests
+app.use(logger("dev"));
+// Serve favicon
+app.use(favicon(path.join(__dirname, "public", "favicon.ico")));
+// Parse json
+app.use(bodyParser.json());
+// Parse form data
+app.use(bodyParser.urlencoded({ extended: false }));
+// Set public directory
+app.use("/static", express.static(path.join(__dirname, "public")));
 
 /*
 ROUTES
 */
 
 // Render a home page
-app.get('/', function (req, res) {
-    res.render('index', { title: 'Hey', message: 'Hello there!' })
-  })  
+app.get("/", function(req, res) {
+	res.render("index", {data});
+});
 
+// Render an about page
+app.get("/about", function(req, res) {
+	res.render("about");
+});
 
-  app.get('/', function (req, res) {
-    res.render('index', { title: 'Hey', message: 'Hello there!' })
-  })  
+// Render project pages
+// app.get("/:id", function(req, res) {
+// 	res.render("project", {project});
+// });
+
+/*
+ERROR HANDLING
+*/
+
+// catch 404 and forward to error handler from http-errors
+app.use(function(req, res, next) {
+	next(createError(404));
+});
+
+// error handler
+app.use(function(err, req, res, next) {
+	// Set message to err.message
+	res.locals.message = err.message;
+	// In development, req.local.error is set to err
+	res.locals.error = req.app.get("env") === "development" ? err : {};
+
+	// Set the response status to err status or 500
+	res.status(err.status || 500);
+	// render the error page
+	res.render("error");
+});
+
+module.exports = app;

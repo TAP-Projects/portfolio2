@@ -1,58 +1,58 @@
 {
     "projects": [
         {
-            "id": "blah",
-            "project_name": "blah",
-            "description": "blah",
-            "technologies": ["blah", "blah"],
-            "live_link": "blah",
-            "github_link": "blah",
-            "image_urls": ["../images/blah", "../images/blah"]
+            "id": "coc111",
+            "project_name": "Creepin' on Colleagues",
+            "description": "A dashboard that allows Treehouse students to view metrics about each others' progress through the the Treehouse curriculum.",
+            "technologies": ["Node", "Express"],
+            "live_link": "http://creepin-on-colleagues.herokuapp.com/",
+            "github_link": "https://github.com/julianjohannesen/creepin-on-colleagues",
+            "image_urls": ["static/images/creepin550x550.PNG", "/static/images/creepin1200x550.PNG"]
         },
         {
-            "id": "blah",
-            "project_name": "blah",
+            "id": "blah2",
+            "project_name": "blah2",
             "description": "blah",
             "technologies": ["blah", "blah"],
             "live_link": "blah",
             "github_link": "blah",
-            "image_urls": ["../images/blah", "../images/blah"]
+            "image_urls": ["static/images/550x550.png", "static/images/550x550.png"]
         },
         {
-            "id": "blah",
-            "project_name": "blah",
+            "id": "blah3",
+            "project_name": "blah3",
             "description": "blah",
             "technologies": ["blah", "blah"],
             "live_link": "blah",
             "github_link": "blah",
-            "image_urls": ["../images/blah", "../images/blah"]
+            "image_urls": ["static/images/550x550.png", "static/images/550x550.png"]
         },
         {
-            "id": "blah",
-            "project_name": "blah",
+            "id": "blah4",
+            "project_name": "blah4",
             "description": "blah",
             "technologies": ["blah", "blah"],
             "live_link": "blah",
             "github_link": "blah",
-            "image_urls": ["../images/blah", "../images/blah"]
+            "image_urls": ["static/images/550x550.png", "static/images/550x550.png"]
         },
         {
-            "id": "blah",
-            "project_name": "blah",
+            "id": "blah5",
+            "project_name": "blah5",
             "description": "blah",
             "technologies": ["blah", "blah"],
             "live_link": "blah",
             "github_link": "blah",
-            "image_urls": ["../images/blah", "../images/blah"]
+            "image_urls": ["static/images/550x550.png", "static/images/550x550.png"]
         },
         {
-            "id": "blah",
-            "project_name": "blah",
+            "id": "blah6",
+            "project_name": "blah6",
             "description": "blah",
             "technologies": ["blah", "blah"],
             "live_link": "blah",
             "github_link": "blah",
-            "image_urls": ["../images/blah", "../images/blah"]
-        },
+            "image_urls": ["static/images/550x550.png", "static/images/550x550.png"]
+        }
     ]
 }

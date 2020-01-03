@@ -1,10 +1,12 @@
 {
-  "name": "portfolio2",
+  "name": "julian-johannesen",
   "version": "0.0.2",
   "description": "Julian Johannesen is a full stack web developer living in the Boston area. ",
   "main": "app.js",
   "scripts": {
-    "test": "test"
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www",
+    "serverstart": "DEBUG=julian-johannesen:* npm run devstart"
   },
   "keywords": [
     "portfolio",
@@ -15,7 +17,12 @@
   "author": "Julian Johannesen",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "pug": "^2.0.4"
+    "http": "0.0.0",
+    "http-errors": "^1.7.3",
+    "morgan": "^1.9.1",
+    "pug": "^2.0.4",
+    "serve-favicon": "^2.5.0"
   }
 }
