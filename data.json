@@ -7,7 +7,7 @@
             "technologies": ["Node", "Express"],
             "live_link": "http://creepin-on-colleagues.herokuapp.com/",
             "github_link": "https://github.com/julianjohannesen/creepin-on-colleagues",
-            "image_urls": ["static/images/creepin550x550.PNG", "/static/images/creepin1200x550.PNG"]
+            "image_urls": ["static/images/creepin550x550.png", "/static/images/creepin1200x550.png"]
         },
         {
             "id": "rrfm",
@@ -19,13 +19,13 @@
             "image_urls": ["static/images/rachaelrunnning550x550.png", "static/images/rachaelrunning1200x550.png"]
         },
         {
-            "id": "blah3",
-            "project_name": "blah3",
-            "description": "blah",
-            "technologies": ["blah", "blah"],
-            "live_link": "blah",
-            "github_link": "blah",
-            "image_urls": ["static/images/550x550.png", "static/images/550x550.png"]
+            "id": "fpwa",
+            "project_name": "Flickr PWA",
+            "description": "A toy app demonstrating how to consume an API from within a React application.",
+            "technologies": ["React", "ES6", "Fetch", "REST"],
+            "live_link": "https://flickr-pwa.herokuapp.com/",
+            "github_link": "https://github.com/TAP-Projects/flickr-pwa",
+            "image_urls": ["static/images/flick-pwa550x550.png", "static/images/flick-pwa1200x550.png"]
         },
         {
             "id": "blah4",
