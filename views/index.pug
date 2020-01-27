@@ -10,7 +10,8 @@ block content
         .grid-x.grid-margin-x.small-up-2.medium-up-2.large-up-3
           each project in data.projects
             .cell
-              - var thumb = project.image_urls[0]
+              //-The first image in the array is the square image, 550x550
+              - var thumb = project.image_urls[0].toLowerCase()
               a(href=`${project.id}`)
                 img.thumbnail(src=`${thumb}`)
                 h5= project.project_name

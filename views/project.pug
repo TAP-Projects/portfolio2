@@ -23,4 +23,4 @@ block content
         a.button.expanded(href=`${project.github_link}`) GitHub Repo
  
     each img in project.image_urls
-      img.image(src=`${img}` alt=`${project.project_name}`)
+      img.image(src=`${img.toLowerCase()}` alt=`${project.project_name}`)
