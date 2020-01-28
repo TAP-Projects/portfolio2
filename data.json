@@ -1,7 +1,7 @@
 {
     "projects": [
         {
-            "id": "coc",
+            "id": "creepin-on-colleagues",
             "project_name": "Creepin' on Colleagues",
             "description": "A dashboard that allows Treehouse students to view metrics about each others' progress through the the Treehouse curriculum.",
             "technologies": [
@@ -16,7 +16,7 @@
             ]
         },
         {
-            "id": "rrfm",
+            "id": "rachael-for-malden",
             "project_name": "Rachael for Malden",
             "description": "The campaign website of Rachael Running, candidate for school committee.",
             "technologies": [
@@ -32,7 +32,7 @@
             ]
         },
         {
-            "id": "fpwa",
+            "id": "flickr-pwa",
             "project_name": "Flickr PWA",
             "description": "A toy app demonstrating how to consume an API from within a React application.",
             "technologies": [
@@ -49,48 +49,52 @@
             ]
         },
         {
-            "id": "blah4",
-            "project_name": "blah4",
-            "description": "blah",
+            "id": "phrase-hunter",
+            "project_name": "Phrase Hunter",
+            "description": "A DOM-based game similar to Wheel of Fortune in which the player tries to guess a phrase within a certain number of guesses.",
             "technologies": [
-                "blah",
-                "blah"
+                "JavaScript",
+                "ES6 Classes",
+                "OOP Principles"
             ],
-            "live_link": "blah",
-            "github_link": "blah",
+            "live_link": "https://julianjohannesen.github.io/phrase-hunter/",
+            "github_link": "https://github.com/julianjohannesen/phrase-hunter",
             "image_urls": [
-                "static/images/550x550.png",
-                "static/images/550x550.png"
+                "static/images/phrase-hunter-game550x550.png",
+                "static/images/phrase-hunter-game1200x550.png"
             ]
         },
         {
-            "id": "blah5",
-            "project_name": "blah5",
-            "description": "blah",
+            "id": "bars-of-davis",
+            "project_name": "Bars of Davis",
+            "description": "A toy app to demonstrate how to use the Google Maps in combination with FourSquare's REST API.",
             "technologies": [
-                "blah",
-                "blah"
+                "React",
+                "REST",
+                "Google APIs"
             ],
-            "live_link": "blah",
-            "github_link": "blah",
+            "live_link": "https://julianjohannesen.github.io/bars-of-davis/",
+            "github_link": "https://github.com/julianjohannesen/bars-of-davis",
             "image_urls": [
-                "static/images/550x550.png",
-                "static/images/550x550.png"
+                "static/images/bars-of-davis550x550.png",
+                "static/images/bars-of-davis1200x550.png"
             ]
         },
         {
-            "id": "blah6",
-            "project_name": "blah6",
-            "description": "blah",
+            "id": "bookybooks",
+            "project_name": "BookyBooks",
+            "description": "A toy app demonstrating how to use OAuth to access the Google Books API.",
             "technologies": [
-                "blah",
-                "blah"
+                "React",
+                "REST",
+                "OAuth",
+                "Google APIs"
             ],
-            "live_link": "blah",
-            "github_link": "blah",
+            "live_link": "https://bookybooks.org/",
+            "github_link": "https://github.com/julianjohannesen/bookybooks",
             "image_urls": [
-                "static/images/550x550.png",
-                "static/images/550x550.png"
+                "static/images/bookybooks550x550.png",
+                "static/images/bookybooks1200x550.png"
             ]
         }
     ]
