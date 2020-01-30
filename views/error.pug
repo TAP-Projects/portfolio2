@@ -5,7 +5,10 @@ block content
     a(href='/') ← Back
     article.grid-container.portfolio-intro
         .cell.small-6.medium-9.large-9
-        h1= `${status} ${message}`
+        if status = 400
+            h1= `${status} ${message}`
+        else 
+            h1= `${status} Server error`
         div.error
             //- if single error
             if error 

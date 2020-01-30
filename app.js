@@ -58,10 +58,10 @@ app.use(function(req, res, next) {
 app.use(function(err, req, res, next) {
 	// Set message to err.message
 	res.locals.message = err.message;
+	// Set status to err.status
+	res.locals.status = err.status || 500
 	// Set the response status to err status or 500
 	res.status(err.status || 500);
-	// Set status to err.status
-	res.locals.status = err.status
 	// Render the error page
 	res.render("error");
 });
