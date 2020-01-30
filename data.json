@@ -11,8 +11,8 @@
             "live_link": "http://creepin-on-colleagues.herokuapp.com/",
             "github_link": "https://github.com/julianjohannesen/creepin-on-colleagues",
             "image_urls": [
-                "static/images/creepin550x550.png",
-                "static/images/creepin1200x550.png"
+                "/static/images/creepin550x550.png",
+                "/static/images/creepin1200x550.png"
             ]
         },
         {
@@ -27,8 +27,8 @@
             "live_link": "https://www.rachaelformalden.com/",
             "github_link": "https://github.com/julianjohannesen/rachael_running",
             "image_urls": [
-                "static/images/rachaelrunning550x550.png",
-                "static/images/rachaelrunning1200x550.png"
+                "/static/images/rachaelrunning550x550.png",
+                "/static/images/rachaelrunning1200x550.png"
             ]
         },
         {
@@ -44,8 +44,8 @@
             "live_link": "https://flickr-pwa.herokuapp.com/",
             "github_link": "https://github.com/TAP-Projects/flickr-pwa",
             "image_urls": [
-                "static/images/flickr-pwa550x550.png",
-                "static/images/flickr-pwa1200x550.png"
+                "/static/images/flickr-pwa550x550.png",
+                "/static/images/flickr-pwa1200x550.png"
             ]
         },
         {
@@ -60,8 +60,8 @@
             "live_link": "https://julianjohannesen.github.io/phrase-hunter/",
             "github_link": "https://github.com/julianjohannesen/phrase-hunter",
             "image_urls": [
-                "static/images/phrase-hunter-game550x550.png",
-                "static/images/phrase-hunter-game1200x550.png"
+                "/static/images/phrase-hunter-game550x550.png",
+                "/static/images/phrase-hunter-game1200x550.png"
             ]
         },
         {
@@ -76,8 +76,8 @@
             "live_link": "https://julianjohannesen.github.io/bars-of-davis/",
             "github_link": "https://github.com/julianjohannesen/bars-of-davis",
             "image_urls": [
-                "static/images/bars-of-davis550x550.png",
-                "static/images/bars-of-davis1200x550.png"
+                "/static/images/bars-of-davis550x550.png",
+                "/static/images/bars-of-davis1200x550.png"
             ]
         },
         {
@@ -93,8 +93,8 @@
             "live_link": "https://bookybooks.org/",
             "github_link": "https://github.com/julianjohannesen/bookybooks",
             "image_urls": [
-                "static/images/bookybooks550x550.png",
-                "static/images/bookybooks1200x550.png"
+                "/static/images/bookybooks550x550.png",
+                "/static/images/bookybooks1200x550.png"
             ]
         }
     ]

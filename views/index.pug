@@ -12,6 +12,6 @@ block content
             .cell
               //-The first image in the array is the square image, 550x550
               - var thumb = project.image_urls[0].toLowerCase()
-              a(href=`${project.id}`)
+              a(href=`projects/${project.id}`)
                 img.thumbnail(src=`${thumb}`)
                 h5= project.project_name
