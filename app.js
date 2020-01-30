@@ -30,20 +30,6 @@ app.use(function (err, req, res, next) {
 	res.status(500).send('Something broke!');
 })
 
-// // error handler
-// app.use(function(err, req, res, next) {
-// 	console.error(err)
-// 	// Set message to err.message
-// 	res.locals.message = err.message;
-// 	// In development, req.local.error is set to err
-// 	res.locals.error = req.app.get("env") === "development" ? err : {};
-
-// 	// Set the response status to err status or 500
-// 	res.status(err.status || 500);
-// 	// Render the error page
-// 	res.render("error");
-// });
-
 /*
 ROUTES
 */
@@ -66,8 +52,19 @@ app.get("/projects/:id", function(req, res) {
 
 // Catch 404s and forward to error handler from http-errors
 app.use(function(req, res, next) {
-	res.status(404).send("Sorry can't find that!");
-	//next(createError(404));
+	next(createError(404));
+});
+
+// error handler
+app.use(function(err, req, res, next) {
+	// Set message to err.message
+	res.locals.message = err.message;
+	// Set status to err.status
+	res.locals.status = err.status || 500
+	// Set the response status to err status or 500
+	res.status(err.status || 500);
+	// Render the error page
+	res.render("error");
 });
 
 module.exports = app;
