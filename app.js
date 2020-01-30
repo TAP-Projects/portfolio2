@@ -25,13 +25,32 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Set public directory
 app.use("/static", express.static(path.join(__dirname, "public")));
 
+app.use(function (err, req, res, next) {
+	console.error(err.stack);
+	res.status(500).send('Something broke!');
+})
+
+// // error handler
+// app.use(function(err, req, res, next) {
+// 	console.error(err)
+// 	// Set message to err.message
+// 	res.locals.message = err.message;
+// 	// In development, req.local.error is set to err
+// 	res.locals.error = req.app.get("env") === "development" ? err : {};
+
+// 	// Set the response status to err status or 500
+// 	res.status(err.status || 500);
+// 	// Render the error page
+// 	res.render("error");
+// });
+
 /*
 ROUTES
 */
 
 // Render a home page
 app.get("/", function(req, res) {
-	res.render("index", {data});
+	res.render("index", { data });
 });
 
 // Render an about page
@@ -40,31 +59,15 @@ app.get("/about", function(req, res) {
 });
 
 // Render project pages
-app.get("/:id", function(req, res) {
-  const project = data.projects.filter(proj => req.params.id === proj.id)[0];
-	res.render("project", {project});
+app.get("/projects/:id", function(req, res) {
+	const project = data.projects.filter( proj => req.params.id === proj.id )[0];
+	res.render("project", { project });
 });
 
-/*
-ERROR HANDLING
-*/
-
-// catch 404 and forward to error handler from http-errors
+// Catch 404s and forward to error handler from http-errors
 app.use(function(req, res, next) {
-	next(createError(404));
-});
-
-// error handler
-app.use(function(err, req, res, next) {
-	// Set message to err.message
-	res.locals.message = err.message;
-	// In development, req.local.error is set to err
-	res.locals.error = req.app.get("env") === "development" ? err : {};
-
-	// Set the response status to err status or 500
-	res.status(err.status || 500);
-	// Render the error page
-	res.render("error");
+	res.status(404).send("Sorry can't find that!");
+	//next(createError(404));
 });
 
 module.exports = app;
