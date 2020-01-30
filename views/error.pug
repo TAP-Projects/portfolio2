@@ -5,15 +5,14 @@ block content
     a(href='/') ← Back
     article.grid-container.portfolio-intro
         .cell.small-6.medium-9.large-9
-        h1= message
+        h1= `${status} ${message}`
         div.error
             //- if single error
             if error 
                 h2= error.status
-                div #{error.stack}
+                div= error.stack
             //- express-validator returns an array of errors
             else
-                h2= `${status}: ${errors[0].msg} for ${errors[0].param}`
-                p Sorry. There's been  an error.
+                h2 Sorry. There's been  an error.
     nav.grid-container.portfolio-breadcrumb
     a(href='/') ← Back
